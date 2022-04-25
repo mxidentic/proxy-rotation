@@ -28,7 +28,7 @@ def check_proxy():
         'https': f'socks5://{proxy_address}'
     }
     try:
-        requests.post('https://gql.twitch.tv/gql', proxies=proxies, timeout=2).json()
+        requests.post('https://google.com/', proxies=proxies, timeout=2).json()
         proxy = proxy_address
     except (ConnectionError,
             ConnectTimeout,
